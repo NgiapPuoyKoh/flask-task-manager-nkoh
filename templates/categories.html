@@ -24,10 +24,14 @@
       <div class="card-action">
         <a
           href="{{ url_for('edit_category', category_id=category._id) }}"
-          class="btn greeen accet-4"
+          class="btn greeen accent-4"
           >Edit</a
         >
-        <a href="#" class="btn light-blue lighten-1">Delete</a>
+        <a
+          href="{{ url_for('delete_category', category_id=category._id) }}"
+          class="btn light-blue lighten-1"
+          >Delete</a
+        >
       </div>
     </div>
   </div>
